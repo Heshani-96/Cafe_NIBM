@@ -22,6 +22,7 @@ class signinViewController: UIViewController {
 
     @IBAction func btnSignin(_ sender: UIButton) {
         if validateInput(){
+            authenticateUser(email: txtEmail.text!, password: txtPassword.text!)
             
         }else {
             print("input error found")
@@ -49,6 +50,17 @@ class signinViewController: UIViewController {
     }
     
     func authenticateUser(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) {
+            authResult, error in
+            
+            if let err = error{
+                print(err.localizedDescription)
+                return
+            }
+            if let result = authResult {
+                print("User Email : \(result.user.email ?? "No Found")")
+            }
+        }
         
     }
 
