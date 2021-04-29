@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n3b-2a-rHR">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -338,6 +338,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eik-0k-HPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="62"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oBi-Bc-NvK">
+            <objects>
+                <viewController id="n3b-2a-rHR" customClass="FOODViewController" customModule="cafeNIBM_FINAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rUt-Xz-cgo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHq-l3-k8A">
+                                <rect key="frame" x="25" y="30" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.34868478959999999" green="0.21363637059999999" blue="0.069623031899999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="280" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-Ba-m9O">
+                                <rect key="frame" x="20" y="80" width="335" height="567"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="n3b-2a-rHR" id="RSu-EP-5JD"/>
+                                    <outlet property="delegate" destination="n3b-2a-rHR" id="wm0-uX-XC2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bf1-F7-ZIm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ape-Ba-m9O" firstAttribute="leading" secondItem="Bf1-F7-ZIm" secondAttribute="leading" constant="20" id="78V-2k-qWb"/>
+                            <constraint firstItem="Ape-Ba-m9O" firstAttribute="top" secondItem="QHq-l3-k8A" secondAttribute="bottom" constant="20" id="FCh-Nr-2iu"/>
+                            <constraint firstItem="Bf1-F7-ZIm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QHq-l3-k8A" secondAttribute="trailing" constant="280" id="HrH-hd-0jA"/>
+                            <constraint firstItem="Bf1-F7-ZIm" firstAttribute="bottom" secondItem="Ape-Ba-m9O" secondAttribute="bottom" constant="20" id="eLT-OP-5yH"/>
+                            <constraint firstItem="QHq-l3-k8A" firstAttribute="top" secondItem="Bf1-F7-ZIm" secondAttribute="top" constant="30" id="pHk-WV-LvP"/>
+                            <constraint firstItem="QHq-l3-k8A" firstAttribute="leading" secondItem="Bf1-F7-ZIm" secondAttribute="leading" constant="25" id="qF2-my-Gue"/>
+                            <constraint firstItem="Bf1-F7-ZIm" firstAttribute="trailing" secondItem="Ape-Ba-m9O" secondAttribute="trailing" constant="20" id="rie-8T-MMo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableFood" destination="Ape-Ba-m9O" id="lgd-OZ-haJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ov-7j-Xkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="61.619190404797607"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "KFC-reopens-11-restaurants-for-delivery-only_wrbm_large.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "KFC-reopens-11-restaurants-for-delivery-only_wrbm_large@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "KFC-reopens-11-restaurants-for-delivery-only_wrbm_large@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

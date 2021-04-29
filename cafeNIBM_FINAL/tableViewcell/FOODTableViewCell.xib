@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCellReuseIdentifier" rowHeight="272" id="KGk-i7-Jjw" customClass="FOODTableViewCell" customModule="cafeNIBM_FINAL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taco" translatesAutoresizingMaskIntoConstraints="NO" id="qGd-y6-tdh">
+                        <rect key="frame" x="0.0" y="0.0" width="441" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="5r9-5q-6Wa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPY-YL-rb1">
+                        <rect key="frame" x="25" y="185" width="44" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Lha-nT-lCk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                        <color key="textColor" red="1" green="0.69487714685594559" blue="0.23594920360237814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNn-C0-5sf">
+                        <rect key="frame" x="20" y="215" width="401" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="12"/>
+                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LKR 800/=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyM-8K-0Xq">
+                        <rect key="frame" x="20" y="239.5" width="93.5" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  10% Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nke-n0-qXj">
+                        <rect key="frame" x="346" y="20" width="75" height="20.5"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.92677040020889578" green="0.97915249039097008" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nyM-8K-0Xq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4I1-AD-wkV"/>
+                    <constraint firstItem="BNn-C0-5sf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="855-7E-JJo"/>
+                    <constraint firstItem="qGd-y6-tdh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FQf-a8-HCc"/>
+                    <constraint firstAttribute="trailing" secondItem="qGd-y6-tdh" secondAttribute="trailing" id="FU9-Aq-BvU"/>
+                    <constraint firstItem="nyM-8K-0Xq" firstAttribute="top" secondItem="BNn-C0-5sf" secondAttribute="bottom" constant="10" id="HYQ-ds-ZZK"/>
+                    <constraint firstItem="qGd-y6-tdh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JNs-8F-RgZ"/>
+                    <constraint firstItem="BNn-C0-5sf" firstAttribute="top" secondItem="uPY-YL-rb1" secondAttribute="bottom" constant="10" id="N3I-Dr-m3b"/>
+                    <constraint firstAttribute="trailing" secondItem="Nke-n0-qXj" secondAttribute="trailing" constant="20" id="Nls-eI-73F"/>
+                    <constraint firstItem="uPY-YL-rb1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="eYG-W0-WFU"/>
+                    <constraint firstItem="Nke-n0-qXj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="gFT-ju-4iS"/>
+                    <constraint firstAttribute="trailing" secondItem="BNn-C0-5sf" secondAttribute="trailing" constant="20" id="qVK-pH-VZb"/>
+                    <constraint firstItem="uPY-YL-rb1" firstAttribute="top" secondItem="qGd-y6-tdh" secondAttribute="bottom" constant="15" id="yhp-yT-m7r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="foodDescription" destination="BNn-C0-5sf" id="GyW-VF-ga1"/>
+                <outlet property="foodDiscount" destination="Nke-n0-qXj" id="fBk-co-v7x"/>
+                <outlet property="foodImage" destination="qGd-y6-tdh" id="uUO-I0-YId"/>
+                <outlet property="foodName" destination="uPY-YL-rb1" id="Qwc-m0-wcL"/>
+                <outlet property="foodPrice" destination="nyM-8K-0Xq" id="AUw-b6-tvw"/>
+            </connections>
+            <point key="canvasLocation" x="225.36231884057972" y="167.41071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Taco" width="333" height="222.5"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

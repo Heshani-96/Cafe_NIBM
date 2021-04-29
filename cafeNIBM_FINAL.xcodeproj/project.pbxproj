@@ -17,6 +17,9 @@
 		54BF7B9226319C0B00F34BDA /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF7B9126319C0B00F34BDA /* Entity.swift */; };
 		54BF7B9626394E9300F34BDA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF7B9526394E9300F34BDA /* SignUpViewController.swift */; };
 		54BF7B9A26397D1300F34BDA /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF7B9926397D1300F34BDA /* SessionManager.swift */; };
+		54BF7B9D263A810700F34BDA /* FOODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF7B9C263A810700F34BDA /* FOODViewController.swift */; };
+		54BF7BA6263A879200F34BDA /* FOODTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF7BA4263A879200F34BDA /* FOODTableViewCell.swift */; };
+		54BF7BA7263A879200F34BDA /* FOODTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BF7BA5263A879200F34BDA /* FOODTableViewCell.xib */; };
 		86A3DAA3A3FDE3B00DD9875F /* Pods_cafeNIBM_FINAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F477826DC5E51808E79B626 /* Pods_cafeNIBM_FINAL.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		54BF7B9126319C0B00F34BDA /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		54BF7B9526394E9300F34BDA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		54BF7B9926397D1300F34BDA /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		54BF7B9C263A810700F34BDA /* FOODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FOODViewController.swift; sourceTree = "<group>"; };
+		54BF7BA4263A879200F34BDA /* FOODTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FOODTableViewCell.swift; sourceTree = "<group>"; };
+		54BF7BA5263A879200F34BDA /* FOODTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FOODTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		54BF7B6526313FA000F34BDA /* cafeNIBM_FINAL */ = {
 			isa = PBXGroup;
 			children = (
+				54BF7B9F263A870700F34BDA /* tableViewcell */,
 				54BF7B9826397CDD00F34BDA /* Utilities */,
 				54BF7B8C2631801300F34BDA /* Controllers */,
 				54BF7B8B2631800D00F34BDA /* Views */,
@@ -106,6 +113,7 @@
 			children = (
 				54BF7B8D2631840E00F34BDA /* signinViewController.swift */,
 				54BF7B9526394E9300F34BDA /* SignUpViewController.swift */,
+				54BF7B9C263A810700F34BDA /* FOODViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +124,15 @@
 				54BF7B9926397D1300F34BDA /* SessionManager.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		54BF7B9F263A870700F34BDA /* tableViewcell */ = {
+			isa = PBXGroup;
+			children = (
+				54BF7BA4263A879200F34BDA /* FOODTableViewCell.swift */,
+				54BF7BA5263A879200F34BDA /* FOODTableViewCell.xib */,
+			);
+			path = tableViewcell;
 			sourceTree = "<group>";
 		};
 		72B0B067C1FBF2C6947DB168 /* Pods */ = {
@@ -194,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BF7BA7263A879200F34BDA /* FOODTableViewCell.xib in Resources */,
 				54BF7B7326313FA100F34BDA /* LaunchScreen.storyboard in Resources */,
 				54BF7B8826317C0F00F34BDA /* GoogleService-Info.plist in Resources */,
 				54BF7B7026313FA100F34BDA /* Assets.xcassets in Resources */,
@@ -252,8 +270,10 @@
 			files = (
 				54BF7B8E2631840E00F34BDA /* signinViewController.swift in Sources */,
 				54BF7B9226319C0B00F34BDA /* Entity.swift in Sources */,
+				54BF7B9D263A810700F34BDA /* FOODViewController.swift in Sources */,
 				54BF7B9A26397D1300F34BDA /* SessionManager.swift in Sources */,
 				54BF7B6726313FA000F34BDA /* AppDelegate.swift in Sources */,
+				54BF7BA6263A879200F34BDA /* FOODTableViewCell.swift in Sources */,
 				54BF7B6926313FA000F34BDA /* SceneDelegate.swift in Sources */,
 				54BF7B9626394E9300F34BDA /* SignUpViewController.swift in Sources */,
 			);

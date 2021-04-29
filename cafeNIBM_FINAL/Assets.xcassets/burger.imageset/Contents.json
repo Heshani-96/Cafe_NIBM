@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "fast-foods-candy-cookies-pastries-768.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "fast-foods-candy-cookies-pastries-768@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "fast-foods-candy-cookies-pastries-768@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

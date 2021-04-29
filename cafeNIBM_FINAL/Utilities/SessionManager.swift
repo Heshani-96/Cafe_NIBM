@@ -15,7 +15,7 @@ class SessionManager {
   
     }
     
-    func saveUserLogin(user: user) {
+    func saveUserLogin() {
         UserDefaults.standard.setValue(true, forKey: "LOGGED_IN")
     }
     

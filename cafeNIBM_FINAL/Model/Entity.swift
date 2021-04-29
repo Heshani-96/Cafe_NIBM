@@ -19,6 +19,7 @@ struct food {
     var description: String
     var price: Double
     var discount: Int
+    var image: String
 }
 //class user1 {
 //    var userName: String

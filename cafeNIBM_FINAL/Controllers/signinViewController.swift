@@ -57,10 +57,12 @@ class signinViewController: UIViewController {
                 print(err.localizedDescription)
                 return
             }
-            if let result = authResult {
-                print("User Email : \(result.user.email ?? "No Found")")
-            }
+            
+            let sessionManager = SessionManager()
+            sessionManager.saveUserLogin()
+            
         }
+        
         
     }
 
