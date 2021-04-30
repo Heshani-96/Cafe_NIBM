@@ -10,14 +10,16 @@ import Firebase
 import Loaf
 
 class signinViewController: UIViewController {
+    var ref: DatabaseReference!
+
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
+        ref = Database.database().reference()
+}
     
     @IBAction func btnSignin(_ sender: UIButton) {
         
@@ -42,11 +44,45 @@ class signinViewController: UIViewController {
                 Loaf("username or password is invalid", state: .error, sender: self).show()
                 return
             }
+            if let email = authResult?.user.email {
+                self.getUserData(email: email)
+            } else {
+                Loaf("User email not found!!!", state: .error, sender: self).show()
+
+            }
             
-            let sessionManager = SessionManager()
-            sessionManager.saveUserLogin()
-            self.performSegue(withIdentifier: "signInToHome", sender: nil)
+//            let sessionManager = SessionManager()
+//            sessionManager.saveUserLogin()
+//            self.performSegue(withIdentifier: "signInToHome", sender: nil)
             
         }
+    }
+    func getUserData(email: String) {
+        ref.child("users").child(email
+            .replacingOccurrences(of: "@", with: "_")
+            .replacingOccurrences(of: ".", with: "_")
+        ).observe(.value, with: {
+            (snapshot) in
+            
+            if snapshot.hasChildren() {
+                if let data = snapshot.value {
+                    if let userData = data as? [String: String] {
+                        
+                        let user = User(
+                                        userName: userData["name"]!,
+                                        email: userData["email"]!,
+                                        password: userData["password"]!,
+                                        phoneNo: userData["phone"]! )
+                        
+                        let sessionManager = SessionManager()
+                        sessionManager.saveUserLogin(user: user)
+                    }
+                    self.performSegue(withIdentifier: "signInToHome", sender: nil)
+                }
+            } else {
+                Loaf("User not found!!!", state: .error, sender: self).show()
+
+            }
+        })
     }
 }

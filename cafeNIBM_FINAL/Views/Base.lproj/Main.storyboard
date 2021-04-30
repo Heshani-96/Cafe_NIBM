@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZcV-B5-jZf">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="ztF-ME-vvA">
+            <objects>
+                <viewController id="ZcV-B5-jZf" customClass="launchViewController" customModule="cafeNIBM_FINAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPS-KQ-Zyh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="H8Y-ar-a3m">
+                                <rect key="frame" x="77.5" y="223.5" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="hx4-ss-I8r"/>
+                                    <constraint firstAttribute="height" constant="220" id="odB-LZ-fCq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By NIBM Computing 19.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugq-n0-tqI">
+                                <rect key="frame" x="88.5" y="621.5" width="198.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w7k-n8-9Gz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w7k-n8-9Gz" firstAttribute="bottom" secondItem="Ugq-n0-tqI" secondAttribute="bottom" constant="30" id="7DJ-WE-X6U"/>
+                            <constraint firstItem="H8Y-ar-a3m" firstAttribute="centerX" secondItem="pPS-KQ-Zyh" secondAttribute="centerX" id="7dL-uM-klh"/>
+                            <constraint firstItem="H8Y-ar-a3m" firstAttribute="centerY" secondItem="pPS-KQ-Zyh" secondAttribute="centerY" id="RxQ-gh-hSu"/>
+                            <constraint firstItem="Ugq-n0-tqI" firstAttribute="centerX" secondItem="pPS-KQ-Zyh" secondAttribute="centerX" id="cLH-0c-JGx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="launchToSignIn" modalPresentationStyle="fullScreen" id="XrN-KN-6lH"/>
+                        <segue destination="Jm4-qE-Qlb" kind="presentation" identifier="lanchToHomeScreen" modalPresentationStyle="fullScreen" id="hM5-rS-xSA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaP-S4-fSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-990" y="838"/>
+        </scene>
         <!--Signin View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -142,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.199999999999999" y="61.619190404797607"/>
+            <point key="canvasLocation" x="-226" y="62"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Jaq-s3-ffz">
@@ -349,13 +390,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHq-l3-k8A">
-                                <rect key="frame" x="25" y="30" width="70" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <rect key="frame" x="25" y="30" width="59" height="24"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <color key="textColor" red="0.34868478959999999" green="0.21363637059999999" blue="0.069623031899999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="280" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-Ba-m9O">
-                                <rect key="frame" x="20" y="80" width="335" height="518"/>
+                                <rect key="frame" x="20" y="74" width="335" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="n3b-2a-rHR" id="RSu-EP-5JD"/>
@@ -375,14 +416,131 @@
                             <constraint firstItem="Bf1-F7-ZIm" firstAttribute="trailing" secondItem="Ape-Ba-m9O" secondAttribute="trailing" constant="20" id="rie-8T-MMo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FOOD" image="food-3" id="yMi-Yc-MuT"/>
+                    <tabBarItem key="tabBarItem" title="FOOD" image="map" catalog="system" id="yMi-Yc-MuT"/>
                     <connections>
                         <outlet property="tableFood" destination="Ape-Ba-m9O" id="lgd-OZ-haJ"/>
+                        <segue destination="Nam-8M-L8b" kind="presentation" identifier="homeToFoodDetails" modalPresentationStyle="fullScreen" id="CXI-l2-zcz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ov-7j-Xkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-87" y="1604"/>
+        </scene>
+        <!--Food Details View Controller-->
+        <scene sceneID="dwa-Jj-S5J">
+            <objects>
+                <viewController id="Nam-8M-L8b" customClass="foodDetailsViewController" customModule="cafeNIBM_FINAL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xQi-c2-Mc6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuO-ic-m0U">
+                                <rect key="frame" x="149.5" y="40" width="76.5" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E7S-dC-QKX">
+                                <rect key="frame" x="20" y="90" width="335" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="LPZ-WU-Ois"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7e-g6-RRh">
+                                <rect key="frame" x="30" y="35" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="RXb-Wt-9Ef"/>
+                                    <constraint firstAttribute="height" constant="40" id="qLN-6a-7jn"/>
+                                </constraints>
+                                <color key="tintColor" red="0.34868478959999999" green="0.21363637059999999" blue="0.069623031899999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button">
+                                    <imageReference key="image" image="arrowshape.turn.up.left.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gh-SO-VJK">
+                                <rect key="frame" x="20" y="245" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Mnd-se-P47"/>
+                                    <constraint firstAttribute="height" constant="20" id="ku4-d5-KOD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <color key="textColor" red="0.77753931283950806" green="0.50600683689117432" blue="0.080520547926425934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUm-zZ-huw">
+                                <rect key="frame" x="20" y="280" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Rfl-Bk-t9j"/>
+                                    <constraint firstAttribute="width" constant="80" id="wzl-iU-QjT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <color key="textColor" red="0.65069270133972168" green="0.36519640684127808" blue="0.091499291360378265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT7-Fh-lVD">
+                                <rect key="frame" x="20" y="335" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="PXR-ZJ-v97"/>
+                                    <constraint firstAttribute="width" constant="80" id="tSP-zt-Ub2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <color key="textColor" red="0.65069270133972168" green="0.36519640684127808" blue="0.091499291360378265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 10% off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BK-9V-y8a">
+                                <rect key="frame" x="295" y="250" width="60" height="20"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="24i-yk-5g0"/>
+                                    <constraint firstAttribute="width" constant="60" id="XXJ-V9-FR3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0g-vW-L5z">
+                                <rect key="frame" x="15" y="587" width="345" height="55"/>
+                                <color key="backgroundColor" red="0.77753931279999999" green="0.50600683690000003" blue="0.080520547930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Wgb-wh-QHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="22"/>
+                                <state key="normal" title="Add To Cart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSignUp:" destination="l2f-k0-Vbu" eventType="touchUpInside" id="V7E-Ci-ZQU"/>
+                                    <action selector="btnSignin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKn-fB-sLK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bsz-H0-H2g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QuO-ic-m0U" firstAttribute="top" secondItem="Bsz-H0-H2g" secondAttribute="top" constant="40" id="0da-r3-6AA"/>
+                            <constraint firstItem="E7S-dC-QKX" firstAttribute="leading" secondItem="Bsz-H0-H2g" secondAttribute="leading" constant="20" id="4gx-7H-9Kt"/>
+                            <constraint firstItem="P7e-g6-RRh" firstAttribute="leading" secondItem="Bsz-H0-H2g" secondAttribute="leading" constant="30" id="86v-1j-xQ8"/>
+                            <constraint firstItem="xT7-Fh-lVD" firstAttribute="top" secondItem="yUm-zZ-huw" secondAttribute="bottom" constant="35" id="88w-2F-e0V"/>
+                            <constraint firstItem="Bsz-H0-H2g" firstAttribute="trailing" secondItem="3BK-9V-y8a" secondAttribute="trailing" constant="20" id="ApX-tP-AVH"/>
+                            <constraint firstItem="3BK-9V-y8a" firstAttribute="top" secondItem="E7S-dC-QKX" secondAttribute="bottom" constant="20" id="BLi-a1-PVO"/>
+                            <constraint firstItem="P7e-g6-RRh" firstAttribute="top" secondItem="Bsz-H0-H2g" secondAttribute="top" constant="35" id="HmW-4E-FUJ"/>
+                            <constraint firstItem="Bsz-H0-H2g" firstAttribute="bottom" secondItem="J0g-vW-L5z" secondAttribute="bottom" constant="25" id="Ih9-zy-TGU"/>
+                            <constraint firstItem="J0g-vW-L5z" firstAttribute="leading" secondItem="Bsz-H0-H2g" secondAttribute="leading" constant="15" id="Ou3-w8-Nej"/>
+                            <constraint firstItem="yUm-zZ-huw" firstAttribute="top" secondItem="6Gh-SO-VJK" secondAttribute="bottom" constant="15" id="Q9a-DG-Qc9"/>
+                            <constraint firstItem="yUm-zZ-huw" firstAttribute="leading" secondItem="Bsz-H0-H2g" secondAttribute="leading" constant="20" id="bEQ-jj-TF3"/>
+                            <constraint firstItem="Bsz-H0-H2g" firstAttribute="trailing" secondItem="E7S-dC-QKX" secondAttribute="trailing" constant="20" id="drt-FG-6Hw"/>
+                            <constraint firstItem="xT7-Fh-lVD" firstAttribute="leading" secondItem="Bsz-H0-H2g" secondAttribute="leading" constant="20" id="e3Q-XI-1mY"/>
+                            <constraint firstItem="6Gh-SO-VJK" firstAttribute="top" secondItem="E7S-dC-QKX" secondAttribute="bottom" constant="15" id="eil-9a-Dxi"/>
+                            <constraint firstItem="E7S-dC-QKX" firstAttribute="top" secondItem="QuO-ic-m0U" secondAttribute="bottom" constant="20" id="tOW-NN-YFC"/>
+                            <constraint firstItem="Bsz-H0-H2g" firstAttribute="trailing" secondItem="J0g-vW-L5z" secondAttribute="trailing" constant="15" id="viF-gn-Gav"/>
+                            <constraint firstItem="QuO-ic-m0U" firstAttribute="centerX" secondItem="xQi-c2-Mc6" secondAttribute="centerX" id="wyG-Do-lGE"/>
+                            <constraint firstItem="6Gh-SO-VJK" firstAttribute="leading" secondItem="Bsz-H0-H2g" secondAttribute="leading" constant="20" id="x0G-7Q-eHS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Mf-PQ-4Q6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="2422"/>
         </scene>
         <!--ORDER-->
         <scene sceneID="E0r-vY-q83">
@@ -394,7 +552,7 @@
                         <viewLayoutGuide key="safeArea" id="0Vq-zx-cHa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ORDER" image="wicker-basket" id="jXU-8R-91E"/>
+                    <tabBarItem key="tabBarItem" title="ORDER" image="doc.plaintext" catalog="system" id="jXU-8R-91E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvl-Ji-teF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,18 +561,86 @@
         <!--ACCOUNT-->
         <scene sceneID="JHr-py-a4Z">
             <objects>
-                <viewController id="ftF-Ec-r43" sceneMemberID="viewController">
+                <viewController id="ftF-Ec-r43" customClass="accountViewController" customModule="cafeNIBM_FINAL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bmf-ms-Hmw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnj-SV-LOC">
+                                <rect key="frame" x="25" y="522" width="334" height="72"/>
+                                <color key="backgroundColor" red="0.77753931283950806" green="0.50600683689117432" blue="0.080520547926425934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSignOut:" destination="ftF-Ec-r43" eventType="touchUpInside" id="g4b-uW-Ayc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-hM-hZS">
+                                <rect key="frame" x="25" y="30" width="98.5" height="24"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                <color key="textColor" red="0.34868478959999999" green="0.21363637059999999" blue="0.069623031899999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Sox-V6-Ghf">
+                                <rect key="frame" x="50" y="79" width="225" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="yI4-cP-dQO">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Ht4-Xo-d2y"/>
+                                            <constraint firstAttribute="height" constant="120" id="Kfb-CQ-hHv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OFa-jT-reZ">
+                                        <rect key="frame" x="138" y="25" width="87" height="70.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tko-53-5DS">
+                                                <rect key="frame" x="0.0" y="0.0" width="87" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaO-AN-EOG">
+                                                <rect key="frame" x="0.0" y="27.5" width="87" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User  PhoneNo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRK-2t-8uf">
+                                                <rect key="frame" x="0.0" y="55" width="87" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="csx-6x-GHc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sox-V6-Ghf" firstAttribute="leading" secondItem="csx-6x-GHc" secondAttribute="leading" constant="50" id="7aK-nT-YWH"/>
+                            <constraint firstItem="csx-6x-GHc" firstAttribute="trailing" secondItem="Mnj-SV-LOC" secondAttribute="trailing" constant="122" id="B0p-ap-bv3"/>
+                            <constraint firstItem="Sox-V6-Ghf" firstAttribute="top" secondItem="UGz-hM-hZS" secondAttribute="bottom" constant="25" id="KP4-Rq-MlB"/>
+                            <constraint firstItem="csx-6x-GHc" firstAttribute="bottom" secondItem="Mnj-SV-LOC" secondAttribute="bottom" constant="50" id="OrI-B4-H10"/>
+                            <constraint firstItem="UGz-hM-hZS" firstAttribute="leading" secondItem="csx-6x-GHc" secondAttribute="leading" constant="25" id="Yvs-Gp-glP"/>
+                            <constraint firstItem="Mnj-SV-LOC" firstAttribute="leading" secondItem="csx-6x-GHc" secondAttribute="leading" constant="145" id="czR-tc-x5k"/>
+                            <constraint firstItem="UGz-hM-hZS" firstAttribute="top" secondItem="csx-6x-GHc" secondAttribute="top" constant="30" id="k3s-UV-PX4"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ACCOUNT" image="account-3" id="xHA-3S-qaV"/>
+                    <tabBarItem key="tabBarItem" title="ACCOUNT" image="person.and.person.fill" catalog="system" id="xHA-3S-qaV"/>
+                    <connections>
+                        <outlet property="lblUserEmail" destination="RaO-AN-EOG" id="cFL-Wz-dQk"/>
+                        <outlet property="lblUserName" destination="tko-53-5DS" id="vdf-R9-Uhc"/>
+                        <outlet property="lblUserPhoneNo" destination="eRK-2t-8uf" id="F08-Ew-0Ok"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCI-7h-3tu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="1605"/>
+            <point key="canvasLocation" x="1744.8" y="1604.3478260869567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="J6A-dR-rnq">
@@ -436,13 +662,21 @@
             <point key="canvasLocation" x="877" y="838"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="67O-gf-FW3"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="account-3" width="32" height="32"/>
-        <image name="food-3" width="32" height="32"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="logo" width="341" height="341"/>
-        <image name="wicker-basket" width="32" height="32"/>
+        <image name="man" width="170.5" height="170.5"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="person.and.person.fill" catalog="system" width="128" height="80"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
