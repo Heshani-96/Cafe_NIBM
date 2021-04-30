@@ -11,6 +11,11 @@
 		549B7944263C195B00BD81B4 /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B7943263C195B00BD81B4 /* accountViewController.swift */; };
 		549B7947263C1F5B00BD81B4 /* launchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B7946263C1F5B00BD81B4 /* launchViewController.swift */; };
 		549B794A263C320800BD81B4 /* foodDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B7949263C320800BD81B4 /* foodDetailsViewController.swift */; };
+		549B794D263C3D6500BD81B4 /* cartHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B794C263C3D6500BD81B4 /* cartHandler.swift */; };
+		549B7950263C437600BD81B4 /* cartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B794F263C437600BD81B4 /* cartViewController.swift */; };
+		549B7953263C58AF00BD81B4 /* orderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B7952263C58AF00BD81B4 /* orderViewController.swift */; };
+		549B7957263C59AD00BD81B4 /* orderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B7955263C59AD00BD81B4 /* orderTableViewCell.swift */; };
+		549B7958263C59AD00BD81B4 /* orderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549B7956263C59AD00BD81B4 /* orderTableViewCell.xib */; };
 		54BF7B6726313FA000F34BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF7B6626313FA000F34BDA /* AppDelegate.swift */; };
 		54BF7B6926313FA000F34BDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF7B6826313FA000F34BDA /* SceneDelegate.swift */; };
 		54BF7B6E26313FA000F34BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BF7B6C26313FA000F34BDA /* Main.storyboard */; };
@@ -35,6 +40,11 @@
 		549B7943263C195B00BD81B4 /* accountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
 		549B7946263C1F5B00BD81B4 /* launchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchViewController.swift; sourceTree = "<group>"; };
 		549B7949263C320800BD81B4 /* foodDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDetailsViewController.swift; sourceTree = "<group>"; };
+		549B794C263C3D6500BD81B4 /* cartHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartHandler.swift; sourceTree = "<group>"; };
+		549B794F263C437600BD81B4 /* cartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartViewController.swift; sourceTree = "<group>"; };
+		549B7952263C58AF00BD81B4 /* orderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderViewController.swift; sourceTree = "<group>"; };
+		549B7955263C59AD00BD81B4 /* orderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderTableViewCell.swift; sourceTree = "<group>"; };
+		549B7956263C59AD00BD81B4 /* orderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = orderTableViewCell.xib; sourceTree = "<group>"; };
 		54BF7B6326313FA000F34BDA /* cafeNIBM_FINAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cafeNIBM_FINAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BF7B6626313FA000F34BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BF7B6826313FA000F34BDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +135,8 @@
 				549B7943263C195B00BD81B4 /* accountViewController.swift */,
 				549B7946263C1F5B00BD81B4 /* launchViewController.swift */,
 				549B7949263C320800BD81B4 /* foodDetailsViewController.swift */,
+				549B794F263C437600BD81B4 /* cartViewController.swift */,
+				549B7952263C58AF00BD81B4 /* orderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +146,7 @@
 			children = (
 				54BF7B9926397D1300F34BDA /* SessionManager.swift */,
 				548884E0263B59FE0098D026 /* inputValidator.swift */,
+				549B794C263C3D6500BD81B4 /* cartHandler.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -143,6 +156,8 @@
 			children = (
 				54BF7BA4263A879200F34BDA /* FOODTableViewCell.swift */,
 				54BF7BA5263A879200F34BDA /* FOODTableViewCell.xib */,
+				549B7955263C59AD00BD81B4 /* orderTableViewCell.swift */,
+				549B7956263C59AD00BD81B4 /* orderTableViewCell.xib */,
 			);
 			path = tableViewcell;
 			sourceTree = "<group>";
@@ -227,6 +242,7 @@
 				54BF7B7326313FA100F34BDA /* LaunchScreen.storyboard in Resources */,
 				54BF7B8826317C0F00F34BDA /* GoogleService-Info.plist in Resources */,
 				54BF7B7026313FA100F34BDA /* Assets.xcassets in Resources */,
+				549B7958263C59AD00BD81B4 /* orderTableViewCell.xib in Resources */,
 				54BF7B6E26313FA000F34BDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,15 +298,19 @@
 			files = (
 				549B7947263C1F5B00BD81B4 /* launchViewController.swift in Sources */,
 				54BF7B8E2631840E00F34BDA /* signinViewController.swift in Sources */,
+				549B7957263C59AD00BD81B4 /* orderTableViewCell.swift in Sources */,
+				549B7950263C437600BD81B4 /* cartViewController.swift in Sources */,
 				54BF7B9226319C0B00F34BDA /* Entity.swift in Sources */,
 				54BF7B9D263A810700F34BDA /* FOODViewController.swift in Sources */,
 				54BF7B9A26397D1300F34BDA /* SessionManager.swift in Sources */,
 				54BF7B6726313FA000F34BDA /* AppDelegate.swift in Sources */,
+				549B7953263C58AF00BD81B4 /* orderViewController.swift in Sources */,
 				54BF7BA6263A879200F34BDA /* FOODTableViewCell.swift in Sources */,
 				548884E1263B59FE0098D026 /* inputValidator.swift in Sources */,
 				54BF7B6926313FA000F34BDA /* SceneDelegate.swift in Sources */,
 				549B7944263C195B00BD81B4 /* accountViewController.swift in Sources */,
 				54BF7B9626394E9300F34BDA /* SignUpViewController.swift in Sources */,
+				549B794D263C3D6500BD81B4 /* cartHandler.swift in Sources */,
 				549B794A263C320800BD81B4 /* foodDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

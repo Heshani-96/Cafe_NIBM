@@ -19,6 +19,7 @@ class FOODViewController: UIViewController{
 
 
     var foodItem: [food] = []
+    var selectedFoodItem: food?
         
     
     
@@ -29,8 +30,13 @@ class FOODViewController: UIViewController{
         tableFood.register(UINib(nibName: "FOODTableViewCell", bundle: nil), forCellReuseIdentifier: "foodCellReuseIdentifier")
             getFoodItemsData()
     }
-  
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "homeToFoodDetails" {
+            let destinationViewController = segue.destination as! foodDetailsViewController
+            destinationViewController.foodDetails = selectedFoodItem
+        }
+    }
 }
 extension FOODViewController{
     func getFoodItemsData(){
@@ -76,7 +82,9 @@ extension FOODViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        selectedFoodItem = foodItem[indexPath.row]
+        self.performSegue(withIdentifier: "homeToFoodDetails", sender: nil)
+        
     }
     
     
