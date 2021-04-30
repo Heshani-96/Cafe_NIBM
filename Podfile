@@ -7,4 +7,8 @@ target 'cafeNIBM_FINAL' do
 
   # Pods for cafeNIBM_FINAL
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'SwiftyJSON'
+   pod 'Kingfisher'
+  pod 'Loaf'
 end
