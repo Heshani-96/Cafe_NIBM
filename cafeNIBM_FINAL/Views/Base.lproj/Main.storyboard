@@ -105,7 +105,7 @@
                                             <color key="titleColor" red="0.77753931283950806" green="0.50600683689117432" blue="0.080520547926425934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="l2f-k0-Vbu" kind="presentation" modalPresentationStyle="fullScreen" id="ZEA-05-KJl"/>
+                                            <segue destination="l2f-k0-Vbu" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="LeB-Ld-DoQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -137,7 +137,7 @@
                     <connections>
                         <outlet property="txtEmail" destination="D1E-vV-sLq" id="XP7-oB-hXF"/>
                         <outlet property="txtPassword" destination="Y4J-DD-oLL" id="9z7-da-CfE"/>
-                        <segue destination="n3b-2a-rHR" kind="presentation" identifier="signInToHome" modalPresentationStyle="fullScreen" id="Ov4-dA-mC8"/>
+                        <segue destination="Jm4-qE-Qlb" kind="presentation" identifier="signInToHome" modalPresentationStyle="fullScreen" id="67O-gf-FW3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -173,7 +173,7 @@
                                                             <color key="titleColor" red="0.77753931279999999" green="0.50600683690000003" blue="0.080520547930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="onSignInPressed:" destination="l2f-k0-Vbu" eventType="touchUpInside" id="Ufq-Mw-QI3"/>
+                                                            <action selector="btnSignIn:" destination="l2f-k0-Vbu" eventType="touchUpInside" id="Cau-gP-y30"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -286,8 +286,8 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="btnSignUp:" destination="l2f-k0-Vbu" eventType="touchUpInside" id="5sb-Jh-KRb"/>
                                             <action selector="btnSignin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVx-r2-abU"/>
-                                            <action selector="onSignUpPressed:" destination="l2f-k0-Vbu" eventType="touchUpInside" id="YTc-xw-FkV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -330,17 +330,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="Jrx-9Q-QEY"/>
                     <connections>
-                        <outlet property="txtEmail" destination="iKi-Bd-wdv" id="wjG-8H-MMc"/>
-                        <outlet property="txtName" destination="lna-xA-Phd" id="jbo-Hl-L2P"/>
-                        <outlet property="txtPassword" destination="BI6-yz-x5q" id="Oef-kh-j6V"/>
-                        <outlet property="txtPhoneNo" destination="oFC-4K-n1e" id="I1F-0N-Uep"/>
+                        <outlet property="txtEmail" destination="iKi-Bd-wdv" id="mJ5-gf-GS9"/>
+                        <outlet property="txtName" destination="lna-xA-Phd" id="vX4-kY-r9j"/>
+                        <outlet property="txtPassword" destination="BI6-yz-x5q" id="20f-ih-wCN"/>
+                        <outlet property="txtPhoneNo" destination="oFC-4K-n1e" id="hPZ-X7-E49"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eik-0k-HPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="62"/>
         </scene>
-        <!--View Controller-->
+        <!--FOOD-->
         <scene sceneID="oBi-Bc-NvK">
             <objects>
                 <viewController id="n3b-2a-rHR" customClass="FOODViewController" customModule="cafeNIBM_FINAL" customModuleProvider="target" sceneMemberID="viewController">
@@ -355,7 +355,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="280" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-Ba-m9O">
-                                <rect key="frame" x="20" y="80" width="335" height="567"/>
+                                <rect key="frame" x="20" y="80" width="335" height="518"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="n3b-2a-rHR" id="RSu-EP-5JD"/>
@@ -375,17 +375,72 @@
                             <constraint firstItem="Bf1-F7-ZIm" firstAttribute="trailing" secondItem="Ape-Ba-m9O" secondAttribute="trailing" constant="20" id="rie-8T-MMo"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="FOOD" image="food-3" id="yMi-Yc-MuT"/>
                     <connections>
                         <outlet property="tableFood" destination="Ape-Ba-m9O" id="lgd-OZ-haJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ov-7j-Xkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="883"/>
+            <point key="canvasLocation" x="-87" y="1604"/>
+        </scene>
+        <!--ORDER-->
+        <scene sceneID="E0r-vY-q83">
+            <objects>
+                <viewController id="x16-9p-eaU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rbr-MW-ROe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0Vq-zx-cHa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ORDER" image="wicker-basket" id="jXU-8R-91E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvl-Ji-teF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="1604"/>
+        </scene>
+        <!--ACCOUNT-->
+        <scene sceneID="JHr-py-a4Z">
+            <objects>
+                <viewController id="ftF-Ec-r43" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bmf-ms-Hmw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="csx-6x-GHc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ACCOUNT" image="account-3" id="xHA-3S-qaV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCI-7h-3tu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="1605"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="J6A-dR-rnq">
+            <objects>
+                <tabBarController id="Jm4-qE-Qlb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bSh-5c-Jkr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="n3b-2a-rHR" kind="relationship" relationship="viewControllers" id="2Mf-IJ-ETs"/>
+                        <segue destination="x16-9p-eaU" kind="relationship" relationship="viewControllers" id="sO3-Al-AR1"/>
+                        <segue destination="ftF-Ec-r43" kind="relationship" relationship="viewControllers" id="X3k-fl-RKc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvc-I0-nql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="838"/>
         </scene>
     </scenes>
     <resources>
+        <image name="account-3" width="32" height="32"/>
+        <image name="food-3" width="32" height="32"/>
         <image name="logo" width="341" height="341"/>
+        <image name="wicker-basket" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
