@@ -22,6 +22,12 @@ struct food {
     var image: String
     var category: String
 }
+
+struct Order{
+    var orderID: String = ""
+    var orderStatus: String = ""
+    var orderTotal: Double = 0
+}
 //class user1 {
 //    var userName: String
 //    var email: String

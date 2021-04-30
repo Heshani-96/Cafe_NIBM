@@ -585,7 +585,7 @@
                                 <color key="textColor" red="0.65069270133972168" green="0.36519640684127808" blue="0.091499291360378265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQP-LV-7Aq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQP-LV-7Aq">
                                 <rect key="frame" x="16" y="105" width="343" height="472"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
@@ -689,6 +689,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ORDER" image="doc.plaintext" catalog="system" id="jXU-8R-91E"/>
+                    <connections>
+                        <outlet property="tblOrders" destination="EAg-PB-yea" id="c3H-Tf-jeJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvl-Ji-teF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
