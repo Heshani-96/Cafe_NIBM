@@ -24,11 +24,11 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPY-YL-rb1">
-                        <rect key="frame" x="25" y="185" width="44" height="20"/>
+                        <rect key="frame" x="25" y="185" width="53" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Lha-nT-lCk"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="22"/>
                         <color key="textColor" red="1" green="0.69487714685594559" blue="0.23594920360237814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -39,8 +39,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LKR 800/=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyM-8K-0Xq">
-                        <rect key="frame" x="20" y="239.5" width="93.5" height="22.5"/>
-                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="18"/>
+                        <rect key="frame" x="20" y="239.5" width="119.5" height="28.5"/>
+                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="23"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>

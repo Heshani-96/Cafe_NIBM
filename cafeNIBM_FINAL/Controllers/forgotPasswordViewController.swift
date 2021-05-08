@@ -22,15 +22,20 @@ class forgotPasswordViewController: UIViewController {
     }
     
     @IBAction func btnsubmit(_ sender: UIButton) {
-        let auth = Auth.auth()
-        
-        auth.sendPasswordReset(withEmail: txtemail.text!) { (error) in
-            if let err = error {
-                Loaf("\(err)", state: .error, sender: self).show()
-                
-                return
+    
+        Auth.auth().sendPasswordReset(withEmail: txtemail.text!) { (error) in
+            if error == nil {
+                Loaf("Reset link send to the email", state: .success, sender: self).show()
+            }
+            else{
+                Loaf("Failed!!\(error?.localizedDescription ?? "")", state: .success, sender: self).show()
             }
         }
+    }
+    
+    @IBAction func btnDone(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+
     }
     
 }
