@@ -9,6 +9,7 @@ target 'cafeNIBM_FINAL' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'SwiftyJSON'
-   pod 'Kingfisher'
+  pod 'Kingfisher'
   pod 'Loaf'
+  pod 'SPPermissions/Location'
 end

@@ -8,9 +8,7 @@
 import UIKit
 
 class launchViewController: UIViewController {
-    
     let sessionManager = SessionManager()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,5 +21,4 @@ class launchViewController: UIViewController {
             self.performSegue(withIdentifier: "launchToSignIn", sender: nil)
         }
     }
-
 }

@@ -11,19 +11,12 @@ import SwiftyJSON
 
 class FOODViewController: UIViewController{
     var ref: DatabaseReference!
-
-
     
     @IBOutlet weak var tableFood: UITableView!
-
-
 
     var foodItem: [food] = []
     var selectedFoodItem: food?
         
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
@@ -57,19 +50,14 @@ extension FOODViewController{
                                 category: foodInfo["category"] as! String)
                             
                             self.foodItem.append(singleFoodItem)
-
                         }
                     }
                     self.tableFood.reloadData()
-
                 }
-
             }
         })
-        
     }
 }
-
 
 extension FOODViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -86,6 +74,5 @@ extension FOODViewController: UITableViewDelegate, UITableViewDataSource {
         self.performSegue(withIdentifier: "homeToFoodDetails", sender: nil)
         
     }
-    
     
 }

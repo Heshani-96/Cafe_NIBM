@@ -23,10 +23,9 @@ class accountViewController: UIViewController {
         lblUserEmail.text = user.email
         lblUserPhoneNo.text = user.phoneNo
         
-
     }
     @IBAction func btnSignOut(_ sender: UIButton) {
         sessionManager.clearUserLoggedState()
+        dismiss(animated: true, completion: nil)
     }
-    
 }

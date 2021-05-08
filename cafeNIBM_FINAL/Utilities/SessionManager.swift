@@ -9,7 +9,6 @@ import Foundation
 
 class SessionManager {
     
-    
     func getLoggedState() -> Bool {
      return UserDefaults.standard.bool(forKey: "LOGGED_IN")
   
@@ -30,10 +29,7 @@ class SessionManager {
         return user
         
     }
-    
-    
-    
-    
+
     func clearUserLoggedState(){
         UserDefaults.standard.setValue(false, forKey: "LOGGED_IN")
     }

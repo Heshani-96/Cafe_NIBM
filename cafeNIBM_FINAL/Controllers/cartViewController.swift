@@ -63,7 +63,6 @@ extension cartViewController {
         order["status"] = "pending"
         order["orderItems"] = orderData
         
-
         self.ref.child("orders").child(sessionManager.getUserData().email.replacingOccurrences(of: "@", with: "_")
             .replacingOccurrences(of: ".", with: "_"))
             .childByAutoId()

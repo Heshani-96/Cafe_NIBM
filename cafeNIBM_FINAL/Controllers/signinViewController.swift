@@ -50,7 +50,6 @@ class signinViewController: UIViewController {
                 Loaf("User email not found!!!", state: .error, sender: self).show()
 
             }
-            
 //            let sessionManager = SessionManager()
 //            sessionManager.saveUserLogin()
 //            self.performSegue(withIdentifier: "signInToHome", sender: nil)
@@ -67,7 +66,7 @@ class signinViewController: UIViewController {
             if snapshot.hasChildren() {
                 if let data = snapshot.value {
                     if let userData = data as? [String: String] {
-                        
+                    
                         let user = User(
                                         userName: userData["name"]!,
                                         email: userData["email"]!,
@@ -76,12 +75,11 @@ class signinViewController: UIViewController {
                         
                         let sessionManager = SessionManager()
                         sessionManager.saveUserLogin(user: user)
+                        self.performSegue(withIdentifier: "signInToHome", sender: nil)
                     }
-                    self.performSegue(withIdentifier: "signInToHome", sender: nil)
                 }
             } else {
                 Loaf("User not found!!!", state: .error, sender: self).show()
-
             }
         })
     }

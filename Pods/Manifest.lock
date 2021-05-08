@@ -53,6 +53,9 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
+  - SPPermissions/Core (5.5.8)
+  - SPPermissions/Location (5.5.8):
+    - SPPermissions/Core
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
@@ -60,6 +63,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Kingfisher
   - Loaf
+  - SPPermissions/Location
   - SwiftyJSON
 
 SPEC REPOS:
@@ -77,6 +81,7 @@ SPEC REPOS:
     - Loaf
     - nanopb
     - PromisesObjC
+    - SPPermissions
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -93,8 +98,9 @@ SPEC CHECKSUMS:
   Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SPPermissions: 77d05b0b8489f4c3faefa47317d5af0179c2bfd1
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: aa7e2f4e96315ce4df4c8f5cf085eea132957dbb
+PODFILE CHECKSUM: 1777905270db8470a8ab8982ea13da742e2f5cf4
 
 COCOAPODS: 1.10.1

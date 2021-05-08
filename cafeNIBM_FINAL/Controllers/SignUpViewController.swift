@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import Loaf
+import SPPermissions
 
 class SignUpViewController: UIViewController {
     
@@ -25,6 +26,16 @@ class SignUpViewController: UIViewController {
     
     @IBAction func btnSignIn(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func btnAllowLocation(_ sender: UIButton) {
+        let controller = SPPermissions.list([.locationWhenInUse])
+        controller.titleText = "Location Permission"
+        controller.headerText = "Allow location to the Application"
+        controller.footerText = "Required!!"
+        
+        controller.present(on: self)
+        
     }
     
     @IBAction func btnSignUp(_ sender: UIButton) {
@@ -92,7 +103,6 @@ class SignUpViewController: UIViewController {
             Loaf("Use data saved on database", state: .success, sender: self).show(){
                 type in
                 self.dismiss(animated: true, completion: nil)
-
             }
         }
     }

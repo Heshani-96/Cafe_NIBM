@@ -13,19 +13,15 @@ class orderViewController: UIViewController {
     
     @IBOutlet weak var tblOrders: UITableView!
 
-    
     var orders: [Order] = []
     var ref: DatabaseReference!
     let sessionManager = SessionManager()
-
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
         tblOrders.register(UINib(nibName: "orderTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderCellReuseIdentifier")
         
-    
     }
     override func viewDidAppear(_ animated: Bool) {
         getAllOrders()
@@ -61,7 +57,7 @@ extension orderViewController{
                     }
                 }
             })
-}
+    }
 }
 
 extension orderViewController: UITableViewDelegate, UITableViewDataSource {

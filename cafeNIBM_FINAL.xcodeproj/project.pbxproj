@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		544830A02646574B00F764F7 /* forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448309F2646574B00F764F7 /* forgotPasswordViewController.swift */; };
 		548884E1263B59FE0098D026 /* inputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548884E0263B59FE0098D026 /* inputValidator.swift */; };
 		549B7944263C195B00BD81B4 /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B7943263C195B00BD81B4 /* accountViewController.swift */; };
 		549B7947263C1F5B00BD81B4 /* launchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B7946263C1F5B00BD81B4 /* launchViewController.swift */; };
@@ -36,6 +37,7 @@
 		0F477826DC5E51808E79B626 /* Pods_cafeNIBM_FINAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cafeNIBM_FINAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C67908651CCDA403F5C13A2 /* Pods-cafeNIBM_FINAL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafeNIBM_FINAL.release.xcconfig"; path = "Target Support Files/Pods-cafeNIBM_FINAL/Pods-cafeNIBM_FINAL.release.xcconfig"; sourceTree = "<group>"; };
 		3AEA53A2E9A14C5E8632E2AA /* Pods-cafeNIBM_FINAL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafeNIBM_FINAL.debug.xcconfig"; path = "Target Support Files/Pods-cafeNIBM_FINAL/Pods-cafeNIBM_FINAL.debug.xcconfig"; sourceTree = "<group>"; };
+		5448309F2646574B00F764F7 /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgotPasswordViewController.swift; sourceTree = "<group>"; };
 		548884E0263B59FE0098D026 /* inputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputValidator.swift; sourceTree = "<group>"; };
 		549B7943263C195B00BD81B4 /* accountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
 		549B7946263C1F5B00BD81B4 /* launchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				549B7949263C320800BD81B4 /* foodDetailsViewController.swift */,
 				549B794F263C437600BD81B4 /* cartViewController.swift */,
 				549B7952263C58AF00BD81B4 /* orderViewController.swift */,
+				5448309F2646574B00F764F7 /* forgotPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				54BF7B6926313FA000F34BDA /* SceneDelegate.swift in Sources */,
 				549B7944263C195B00BD81B4 /* accountViewController.swift in Sources */,
 				54BF7B9626394E9300F34BDA /* SignUpViewController.swift in Sources */,
+				544830A02646574B00F764F7 /* forgotPasswordViewController.swift in Sources */,
 				549B794D263C3D6500BD81B4 /* cartHandler.swift in Sources */,
 				549B794A263C320800BD81B4 /* foodDetailsViewController.swift in Sources */,
 			);
